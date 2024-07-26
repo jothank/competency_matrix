@@ -2,6 +2,8 @@
 
 Este projeto foi desenvolvido com base no framework de competências disponível em [Engineering Ladders](https://github.com/jorgef/engineeringladders) criado por Jorge F. Este framework foi adaptado para avaliar e visualizar as competências de colaboradores em diversas áreas, proporcionando uma visão clara dos níveis de habilidade e áreas de desenvolvimento.
 
+---
+
 ### Descrição do Projeto
 
 Este repositório contém uma matriz de competências que permite avaliar os colaboradores em cinco pilares principais:
@@ -11,11 +13,15 @@ Este repositório contém uma matriz de competências que permite avaliar os col
 4. **Processo**: Planejamento, estimativas, fluxo de trabalho e alinhamento estratégico.
 5. **Influência**: Impacto no time, organização e comunidade.
 
+---
+
 ### Arquivos
 
 - **index.html**: Estrutura principal da aplicação.
 - **styles.css**: Estilos e layout da página.
 - **script.js**: Lógica de manipulação do formulário, geração de gráficos e integração com a API de geração de perfil.
+
+---
 
 ### Funcionalidades
 
@@ -23,6 +29,8 @@ Este repositório contém uma matriz de competências que permite avaliar os col
 - Geração de um gráfico radar para visualização das competências.
 - Geração de um resumo em PDF das competências do colaborador.
 - Integração com uma API para gerar uma descrição detalhada do perfil do colaborador.
+
+---
 
 ### Como Utilizar
 
@@ -32,9 +40,13 @@ Este repositório contém uma matriz de competências que permite avaliar os col
 4. Use o botão de download para gerar um PDF com o resumo das competências.
 5. Acesse a matriz de competências no seguinte link: [Matriz de Competências](https://jothank.github.io/competency_matrix/).
 
+---
+
 ### Créditos
 
 Este projeto foi inspirado pelo framework de competências disponível em [Engineering Ladders](https://github.com/jorgef/engineeringladders). A adaptação e implementação foram realizadas para proporcionar uma ferramenta de avaliação personalizada para colaboradores.
+
+---
 
 ### Licença
 
@@ -44,6 +56,7 @@ Para mais informações sobre o framework original, visite [Engineering Ladders]
 
 **Disclaimer**: Este projeto é uma adaptação e não representa a versão oficial do framework [Engineering Ladders](https://github.com/jorgef/engineeringladders).
 
+---
 
 ### Repositório no GitHub
 
