@@ -1,37 +1,65 @@
-# Matriz de Competências / Competency Matrix
+## Matriz de Competências
 
-Este repositório contém um projeto web para a criação e visualização de uma matriz de competências de colaboradores. A aplicação permite que usuários insiram e avaliem competências em diferentes áreas, gerando um resumo visual e um documento PDF para registro.
+Este projeto foi desenvolvido com base no framework de competências disponível em [Engineering Ladders](https://github.com/jorgef/engineeringladders) criado por Jorge F. Este framework foi adaptado para avaliar e visualizar as competências de colaboradores em diversas áreas, proporcionando uma visão clara dos níveis de habilidade e áreas de desenvolvimento.
 
-This repository contains a web project for creating and visualizing a competency matrix for employees. The application allows users to input and evaluate competencies in different areas, generating a visual summary and a PDF document for record-keeping.
+### Descrição do Projeto
 
-## Visão Geral / Overview
+Este repositório contém uma matriz de competências que permite avaliar os colaboradores em cinco pilares principais:
+1. **Tecnologia**: Habilidades técnicas, aplicação das melhores práticas e conhecimento das ferramentas utilizadas.
+2. **Domínio**: Conhecimento do domínio de negócio da empresa e a diversidade de produtos.
+3. **Pessoas**: Trabalho em equipe, comunicação, compartilhamento de conhecimento e gestão de conflitos.
+4. **Processo**: Planejamento, estimativas, fluxo de trabalho e alinhamento estratégico.
+5. **Influência**: Impacto no time, organização e comunidade.
 
-A aplicação é composta por três principais arquivos:
-The application is composed of three main files:
+### Arquivos
 
-1. **index.html**: Estrutura HTML da página / HTML structure of the page.
-2. **styles.css**: Estilos CSS para a apresentação visual / CSS styles for visual presentation.
-3. **script.js**: Scripts JavaScript para funcionalidades dinâmicas / JavaScript scripts for dynamic functionalities.
+- **index.html**: Estrutura principal da aplicação.
+- **styles.css**: Estilos e layout da página.
+- **script.js**: Lógica de manipulação do formulário, geração de gráficos e integração com a API de geração de perfil.
 
-## Funcionalidades / Features
+### Funcionalidades
 
-- **Formulário de Competências**: Permite a entrada de informações sobre o colaborador e seu cargo / Allows input of employee information and their role.
-- **Tabela de Avaliação**: Avaliação das competências em diferentes níveis para cinco áreas específicas: Tecnologia, Domínio, Pessoas, Processo, e Influência / Competency evaluation at different levels for five specific areas: Technology, Domain, People, Process, and Influence.
-- **Gráfico de Competências**: Visualização gráfica das competências avaliadas / Visual representation of evaluated competencies.
-- **Resumo**: Geração de um resumo textual das competências avaliadas / Generation of a textual summary of the evaluated competencies.
-- **Download de PDF**: Geração de um documento PDF contendo o resumo das competências e o gráfico correspondente / Generation of a PDF document containing the competency summary and the corresponding chart.
+- Formulário para entrada dos dados do colaborador e seleção dos níveis de competência.
+- Geração de um gráfico radar para visualização das competências.
+- Geração de um resumo em PDF das competências do colaborador.
+- Integração com uma API para gerar uma descrição detalhada do perfil do colaborador.
 
-## Tecnologias Utilizadas / Technologies Used
+### Como Utilizar
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Chart.js**: Para a criação do gráfico / For creating the chart.
-- **jsPDF**: Para a geração do documento PDF / For generating the PDF document.
-- **FontAwesome**: Ícones utilizados na interface / Icons used in the interface.
+1. Preencha o nome e cargo do colaborador.
+2. Selecione os níveis de competência para cada um dos cinco pilares.
+3. Clique no botão "Atualizar Gráfico" para visualizar o gráfico radar.
+4. Use o botão de download para gerar um PDF com o resumo das competências.
+5. Acesse a matriz de competências no seguinte link: [Matriz de Competências](https://jothank.github.io/competency_matrix/).
 
-## Como Utilizar / How to Use
+### Créditos
 
-1. Clone o repositório para sua máquina local / Clone the repository to your local machine.
-   ```bash
-   git clone https://github.com/seu-usuario/matriz-de-competencias.git
+Este projeto foi inspirado pelo framework de competências disponível em [Engineering Ladders](https://github.com/jorgef/engineeringladders). A adaptação e implementação foram realizadas para proporcionar uma ferramenta de avaliação personalizada para colaboradores.
+
+### Licença
+
+Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+---
+
+Para mais informações sobre o framework original, visite [Engineering Ladders](https://github.com/jorgef/engineeringladders).
+
+---
+
+**Contato**: Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
+
+---
+
+**Disclaimer**: Este projeto é uma adaptação e não representa a versão oficial do framework [Engineering Ladders](https://github.com/jorgef/engineeringladders).
+
+---
+
+Feito com 💖 por [Seu Nome].
+
+### Repositório no GitHub
+
+Confira o repositório completo no GitHub: [Repositório no GitHub](https://github.com/jothank/competency_matrix).
+
+---
+
+**Link para acesso**: [Matriz de Competências](https://jothank.github.io/competency_matrix/)
