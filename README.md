@@ -1,4 +1,8 @@
+### README
+
 ## Matriz de Competências
+
+### Portuguese
 
 Este projeto foi desenvolvido com base no framework de competências disponível em [Engineering Ladders](https://github.com/jorgef/engineeringladders) criado por Jorge F. Este framework foi adaptado para avaliar e visualizar as competências de colaboradores em diversas áreas, proporcionando uma visão clara dos níveis de habilidade e áreas de desenvolvimento.
 
@@ -68,3 +72,76 @@ Confira o repositório completo no GitHub: [Repositório no GitHub](https://gith
 
 Feito com 💖 por Jonathan Cosa.
 
+---
+
+### English
+
+## Competency Matrix
+
+This project was developed based on the competency framework available in [Engineering Ladders](https://github.com/jorgef/engineeringladders) created by Jorge F. This framework was adapted to evaluate and visualize the skills of employees in various areas, providing a clear view of skill levels and development areas.
+
+---
+
+### Project Description
+
+This repository contains a competency matrix that allows evaluating employees in five main pillars:
+1. **Technology**: Technical skills, application of best practices, and knowledge of the tools used.
+2. **Domain**: Knowledge of the company's business domain and product diversity.
+3. **People**: Teamwork, communication, knowledge sharing, and conflict management.
+4. **Process**: Planning, estimates, workflow, and strategic alignment.
+5. **Influence**: Impact on the team, organization, and community.
+
+---
+
+### Files
+
+- **index.html**: Main structure of the application.
+- **styles.css**: Page styles and layout.
+- **script.js**: Form manipulation logic, chart generation, and integration with the profile generation API.
+
+---
+
+### Features
+
+- Form for entering employee data and selecting competency levels.
+- Generation of a radar chart for visualizing competencies.
+- Generation of a PDF summary of the employee's competencies.
+- Integration with an API to generate a detailed description of the employee's profile.
+
+---
+
+### How to Use
+
+1. Fill in the employee's name and position.
+2. Select the competency levels for each of the five pillars.
+3. Click the "Update Chart" button to visualize the radar chart.
+4. Use the download button to generate a PDF with the competency summary.
+5. Access the competency matrix at the following link: [Competency Matrix](https://jothank.github.io/competency_matrix/).
+
+---
+
+### Credits
+
+This project was inspired by the competency framework available in [Engineering Ladders](https://github.com/jorgef/engineeringladders). The adaptation and implementation were carried out to provide a personalized assessment tool for employees.
+
+---
+
+### License
+
+For more information on the original framework, visit [Engineering Ladders](https://github.com/jorgef/engineeringladders).
+
+**Contact**: If you have any questions or suggestions, feel free to contact jothank@hotmail.com.
+
+**Disclaimer**: This project is an adaptation and does not represent the official version of the [Engineering Ladders](https://github.com/jorgef/engineeringladders) framework.
+
+---
+
+### GitHub Repository
+
+Check out the complete repository on GitHub: [GitHub Repository](https://github.com/jothank/competency_matrix).
+
+**Access Link**: [Competency Matrix](https://jothank.github.io/competency_matrix/)
+
+---
+
+Made with 💖 by Jonathan Cosa.
