@@ -38,28 +38,20 @@ Este projeto foi inspirado pelo framework de competências disponível em [Engin
 
 ### Licença
 
-Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
----
-
 Para mais informações sobre o framework original, visite [Engineering Ladders](https://github.com/jorgef/engineeringladders).
 
----
-
-**Contato**: Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
-
----
+**Contato**: Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato jothank@hotmail.com.
 
 **Disclaimer**: Este projeto é uma adaptação e não representa a versão oficial do framework [Engineering Ladders](https://github.com/jorgef/engineeringladders).
 
----
-
-Feito com 💖 por [Seu Nome].
 
 ### Repositório no GitHub
 
 Confira o repositório completo no GitHub: [Repositório no GitHub](https://github.com/jothank/competency_matrix).
 
+**Link para acesso**: [Matriz de Competências](https://jothank.github.io/competency_matrix/)
+
 ---
 
-**Link para acesso**: [Matriz de Competências](https://jothank.github.io/competency_matrix/)
+Feito com 💖 por Jonathan Cosa.
+
