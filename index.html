@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Competências</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://kit.fontawesome.com/fc8d8805f6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.16/jspdf.plugin.autotable.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Matriz de Competências</h1>
+        <form id="competenciasForm" onsubmit="return validarFormulario()">
+            <strong><label for="colaborador">Nome do Colaborador:</label></strong>
+            <input type="text" id="colaborador" name="colaborador" placeholder="Digite o nome do colaborador" required>
+
+            <strong><label for="cargo">Cargo do Colaborador:</label></strong>
+            <input type="text" id="cargo" name="cargo" placeholder="Digite o cargo do colaborador" required>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th
+                            title="Habilidades técnicas, Aplicar as melhores práticas, Conhecimento nas linguagens e ferramentas utilizadas na empresa">
+                            Tecnologia <i class="fa fa-info-circle tooltip-icon"></i>
+                        </th>
+                        <th
+                            title="Conhece o domínio de negócio da empresa, Conhecimento na diversidade de produtos da empresa">
+                            Domínio <i class="fa fa-info-circle tooltip-icon"></i>
+                        </th>
+                        <th
+                            title="Trabalho em equipe, Habilidades de comunicação e receber feedback, Compartilhar conhecimento, Gestão de conflitos">
+                            Pessoas <i class="fa fa-info-circle tooltip-icon"></i>
+                        </th>
+                        <th title="Planejamento, Habilidades de estimativa, Fluxo de trabalho, Alinhamento estratégico">
+                            Processo <i class="fa fa-info-circle tooltip-icon"></i>
+                        </th>
+                        <th
+                            title="Impacto da atuação no time, organização e comunidade, Relacionado com todos os demais pilares">
+                            Influência <i class="fa fa-info-circle tooltip-icon"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nível 1</strong></td>
+                        <td><span>Adota</span><input type="radio" name="Tecnologia" value="1" required></td>
+                        <td><span>Aprende</span><input type="radio" name="Domínio" value="1" required></td>
+                        <td><span>Aprende</span><input type="radio" name="Pessoas" value="1" required></td>
+                        <td><span>Segue</span><input type="radio" name="Processo" value="1" required></td>
+                        <td><span>Contexto</span><input type="radio" name="Influência" value="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nível 2</strong></td>
+                        <td><span>Orienta</span><input type="radio" name="Tecnologia" value="2" required></td>
+                        <td><span>Apoia</span><input type="radio" name="Domínio" value="2" required></td>
+                        <td><span>Apoia</span><input type="radio" name="Pessoas" value="2" required></td>
+                        <td><span>Executa</span><input type="radio" name="Processo" value="2" required></td>
+                        <td><span>Time</span><input type="radio" name="Influência" value="2" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nível 3</strong></td>
+                        <td><span>Evangeliza</span><input type="radio" name="Tecnologia" value="3" required></td>
+                        <td><span>Referência</span><input type="radio" name="Domínio" value="3" required></td>
+                        <td><span>Mentora</span><input type="radio" name="Pessoas" value="3" required></td>
+                        <td><span>Desafia</span><input type="radio" name="Processo" value="3" required></td>
+                        <td><span>Área</span><input type="radio" name="Influência" value="3" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nível 4</strong></td>
+                        <td><span>Ensina</span><input type="radio" name="Tecnologia" value="4" required></td>
+                        <td><span>Multiplica</span><input type="radio" name="Domínio" value="4" required></td>
+                        <td><span>Coordena</span><input type="radio" name="Pessoas" value="4" required></td>
+                        <td><span>Aprimora</span><input type="radio" name="Processo" value="4" required></td>
+                        <td><span>Empresa</span><input type="radio" name="Influência" value="4" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nível 5</strong></td>
+                        <td><span>Cria</span><input type="radio" name="Tecnologia" value="5" required></td>
+                        <td><span>Define</span><input type="radio" name="Domínio" value="5" required></td>
+                        <td><span>Gerência</span><input type="radio" name="Pessoas" value="5" required></td>
+                        <td><span>Define</span><input type="radio" name="Processo" value="5" required></td>
+                        <td><span>Comunidade</span><input type="radio" name="Influência" value="5" required></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+        <canvas id="competenciasChart" width="400" height="400"></canvas>
+        <strong><label for="comentariosAdicionais">Comentários Adicionais:</label></strong>
+        <textarea id="comentariosAdicionais" name="comentariosAdicionais" rows="4"
+            placeholder="Digite aqui..."></textarea>
+
+        <div id="resumo">
+            <h2>Resumo</h2>
+            <p id="resumoTexto"></p>
+        </div>
+
+        <div class="button-container">
+            <a id="downloadLink" href="#" onclick="gerarPDF()" disabled>
+                <i class="fa-solid fa-download"></i>
+            </a>
+            <button type="submit" form="competenciasForm">Atualizar Gráfico</button>
+            <a id="clearButton" href="" onclick="limparFormulario()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
